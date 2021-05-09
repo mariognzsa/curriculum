@@ -4,38 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
 main {
     font-family: 'Inconsolata', monospace;
-}
-
-.landing {
-    min-height: 100vh;
-    padding: 0rem 5rem;
-}
-
-.blurred {
-    min-height: 100vh;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.6;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 10vh;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    padding-left: 10rem;
-    font-size: 1.5rem;
 }
 
 #logo {
@@ -44,35 +18,10 @@ nav {
     font-weight: lighter;
 }
 
-.big-text {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    font-size: 5rem;
-    font-family: 'Major Mono Display', monospace;
-}
-
-.intro {
-    background: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider {
-    background: rgb(101, 116, 112);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
+#static {
+    position:absolute;
+    width:100%;
+    max-width: 100%;
 }
 
 .intro-text {
@@ -89,4 +38,71 @@ nav {
 .hide span {
     transform: translateY(100%);
     display: inline-block;
+}
+
+.menu {
+    /* background: black; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-text {
+    color: white;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 5rem;
+    transition: transform 1s;
+}
+
+#about:hover {
+    transform: translateX(15%) !important;
+}
+#skills:hover {
+    transform: translateX(-15%) !important;
+}
+#portfolio:hover {
+    transform: translateY(10%) !important;
+}
+
+.menu-hide {
+    overflow: hidden;
+}
+
+.menu-hide span {
+    cursor: pointer;
+    transform: translateX(150%);
+    display: inline-block;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 0rem 5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+
+.nav-links {
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding-left: 5rem;
+    font-size: 1.5rem;
 }
