@@ -106,3 +106,42 @@ nav {
     padding-left: 5rem;
     font-size: 1.5rem;
 }
+
+.arrows {
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 500px) {
+    #static {
+        min-height: 100%;
+    }
+    .menu-text {
+        font-size: 2rem;
+    }
+    .arrows {
+        width: 30px;
+        height: 30px;
+    }
+    .menu {
+        top: -20%;
+    }
+    #logo {
+        font-size: 1.5rem;
+        padding: 1rem;
+        min-width: 100%;
+    }
+    .footer {
+        padding: 1rem 2rem;
+    }
+    ul {
+        text-align: center !important;
+        display: inline-block !important;
+        min-width: 100%;
+    }
+    nav ul li {
+        display: inline-block !important;
+        font-size: 1.5rem;
+        padding: 0.8rem !important;
+    }
+}
